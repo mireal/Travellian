@@ -1,0 +1,32 @@
+.icon {
+  display: inline-block;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+
+  &__location {
+    background-image: url('../assets/icons/location.svg');
+  }
+
+  &__star {
+    background-image: url('../assets/icons/star.svg');
+  }
+
+  &__button-left {
+    // width: 66px;
+    // height: 60px;
+    background-image: url('../assets/icons/button-left.svg');
+  }
+
+  &__button-right {
+    background-image: url('../assets/icons/button-right.svg');
+  }
+
+  &__arrow-right {
+    background-image: url('../assets/icons/arrow-right.svg');
+    &--orange {
+      background-image: url('../assets/icons/arrow-right-orange.svg');
+    }
+  }
+}
