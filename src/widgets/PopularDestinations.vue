@@ -29,15 +29,16 @@ const galleryPlaceholder = ref([
 function moveLeft(cards) {
   if (cards.length < 2) return;
 
-  const firstCard = cards.shift();
-  cards.push(firstCard);
+  const lastCard = cards.pop();
+  cards.unshift(lastCard);
 }
 
 function moveRight(cards) {
   if (cards.length < 2) return;
 
-  const lastCard = cards.pop();
-  cards.unshift(lastCard);
+
+  const firstCard = cards.shift();
+  cards.push(firstCard);
 }
 
 </script>
