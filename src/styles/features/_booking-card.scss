@@ -1,0 +1,114 @@
+@use '../media' as media;
+@use '../variables' as variables;
+
+
+.booking-card {
+  display: flex;
+  flex-direction: row;
+
+  @include media.mobile {
+    flex-direction: column;
+  }
+
+  &__owerflow-element {
+    background-color: white;
+    width: 30vw;
+    margin: 0 0 0 -30vw;
+  }
+
+  &__form {
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 40px;
+
+    padding-right: 100px;
+
+    @include media.tablet {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @include media.mobile {
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      padding: 20px;
+      border-radius: 16px 16px 0 0;
+    }
+
+    &__input {
+      display: inline-flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 12px;
+      width: 225px;
+
+      @include media.desktop-medium {
+        width: 195px;
+      }
+
+      @include media.desktop-small {
+        width: 158px;
+      }
+
+      @include media.mobile {
+        width: 100%;
+      }
+
+      & label {
+        font-family: variables.$font-secondary;
+        color: variables.$color-grey;
+      }
+
+      & input,
+      & select {
+        font-family: variables.$font-primary;
+        color: black;
+        border-bottom: 1px solid black;
+        padding-bottom: 10px;
+      }
+
+      & label,
+      & input,
+      & select {
+        font-size: 16px;
+
+        @include media.mobile {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 60px 20px;
+
+    font-family: variables.$font-primary;
+    font-size: 36px;
+    text-align: start;
+
+    color: white;
+    background-color: variables.$color-primary;
+
+    & .icon__arrow-right {
+      width: 21px;
+      height: 21px;
+    }
+
+    @include media.mobile {
+      border-radius: 0 0 16px 16px;
+
+      .line-break {
+        display: none;
+      }
+    }
+  }
+}

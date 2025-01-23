@@ -8,11 +8,19 @@
 @use 'globals';
 
 // PAGES
+@use './pages/home';
 
 // WIDGETS
+@use './widgets/navbar';
+@use './widgets/hero';
+
 
 // FEATURES
+@use './features/navbar-links';
+@use './features/booking-card';
 
 // ENTITIES
+@use './entities/navbar-link';
 
 // SHARED
+@use './shared/button-default';

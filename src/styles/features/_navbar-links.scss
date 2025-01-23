@@ -1,0 +1,12 @@
+@use '../variables' as variables;
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+
+  font-family: variables.$font-secondary;
+}

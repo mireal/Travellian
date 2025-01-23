@@ -1,0 +1,15 @@
+@use '../variables' as variables;
+
+.navbar-link {
+  font-size: 20px;
+  color: white;
+
+  &:visited {
+    color: white;
+  }
+
+  &--active {
+    border-bottom: 3px solid variables.$color-primary;
+    font-weight: bold;
+  }
+}

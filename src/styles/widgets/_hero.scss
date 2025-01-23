@@ -1,0 +1,24 @@
+@use '../media' as media;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+
+  @include media.desktop-small {
+    gap: 140px;
+  }
+
+  @include media.tablet {
+    gap: 100px;
+  }
+
+  &__title-box {
+    display: flex;
+    flex-direction: column;
+    justify-items: start;
+    gap: 18px;
+    
+    color: white;
+  }
+}

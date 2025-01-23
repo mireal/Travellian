@@ -356,6 +356,9 @@ template {
 .icon__arrow-right--orange {
   background-image: url("../assets/icons/arrow-right-orange.svg");
 }
+.icon__logo {
+  background-image: url(../assets/images/logo.svg);
+}
 
 .visually-hidden {
   position: absolute;
@@ -389,6 +392,12 @@ template {
   }
 }
 
+.bg-image {
+  background-image: url("../assets/images/background.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 section {
   padding: 140px 182px;
 }
@@ -410,6 +419,30 @@ section {
 @media only screen and (max-width: 768px) {
   section {
     padding: 80px 16px;
+  }
+}
+
+nav {
+  padding: 32px 182px;
+}
+@media only screen and (max-width: 1900px) {
+  nav {
+    padding: 32px 32px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  nav {
+    padding: 32px 32px;
+  }
+}
+@media only screen and (max-width: 1152px) {
+  nav {
+    padding: 32px 20px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  nav {
+    padding: 24px 16px;
   }
 }
 
@@ -472,4 +505,189 @@ input::-moz-placeholder, select::-moz-placeholder {
 input::placeholder,
 select::placeholder {
   color: inherit;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo {
+  width: 234px;
+  height: 46px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar__logo {
+    width: 140px;
+    height: 28px;
+  }
+}
+.navbar__auth {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 36px;
+}
+.navbar__auth__login {
+  font-family: "Rubik", "sans-serif";
+  font-size: 20px;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: 170px;
+}
+@media only screen and (max-width: 1440px) {
+  .hero {
+    gap: 140px;
+  }
+}
+@media only screen and (max-width: 1152px) {
+  .hero {
+    gap: 100px;
+  }
+}
+.hero__title-box {
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  gap: 18px;
+  color: white;
+}
+
+.navbar-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  font-family: "Rubik", "sans-serif";
+}
+
+.booking-card {
+  display: flex;
+  flex-direction: row;
+}
+@media only screen and (max-width: 768px) {
+  .booking-card {
+    flex-direction: column;
+  }
+}
+.booking-card__owerflow-element {
+  background-color: white;
+  width: 30vw;
+  margin: 0 0 0 -30vw;
+}
+.booking-card__form {
+  background-color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 40px;
+  padding-right: 100px;
+}
+@media only screen and (max-width: 1152px) {
+  .booking-card__form {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .booking-card__form {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    padding: 20px;
+    border-radius: 16px 16px 0 0;
+  }
+}
+.booking-card__form__input {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  width: 225px;
+}
+@media only screen and (max-width: 1900px) {
+  .booking-card__form__input {
+    width: 195px;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .booking-card__form__input {
+    width: 158px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .booking-card__form__input {
+    width: 100%;
+  }
+}
+.booking-card__form__input label {
+  font-family: "Rubik", "sans-serif";
+  color: #767e86;
+}
+.booking-card__form__input input, .booking-card__form__input select {
+  font-family: "Playfair Display", "sans-serif";
+  color: black;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+}
+.booking-card__form__input label, .booking-card__form__input input, .booking-card__form__input select {
+  font-size: 16px;
+}
+@media only screen and (max-width: 768px) {
+  .booking-card__form__input label, .booking-card__form__input input, .booking-card__form__input select {
+    font-size: 14px;
+  }
+}
+.booking-card__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  border: none;
+  border-radius: 0 20px 20px 0;
+  padding: 60px 20px;
+  font-family: "Playfair Display", "sans-serif";
+  font-size: 36px;
+  text-align: start;
+  color: white;
+  background-color: #ff7757;
+}
+.booking-card__button .icon__arrow-right {
+  width: 21px;
+  height: 21px;
+}
+@media only screen and (max-width: 768px) {
+  .booking-card__button {
+    border-radius: 0 0 16px 16px;
+  }
+  .booking-card__button .line-break {
+    display: none;
+  }
+}
+
+.navbar-link {
+  font-size: 20px;
+  color: white;
+}
+.navbar-link:visited {
+  color: white;
+}
+.navbar-link--active {
+  border-bottom: 3px solid #ff7757;
+  font-weight: bold;
+}
+
+.button-default {
+  color: white;
+  background-color: #ff7757;
+  border: none;
+  border-radius: 12px;
+  padding: 20px 32px;
+  font-family: "Rubik", "sans-serif";
+  font-size: 20px;
 }/*# sourceMappingURL=styles.css.map */
