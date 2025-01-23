@@ -1,5 +1,5 @@
 <script setup>
-import { HeroSection, Navbar } from '@/widgets'
+import { HeroSection, Navbar, PopularDestinations } from '@/widgets'
 </script>
 
 <template>
@@ -8,5 +8,7 @@ import { HeroSection, Navbar } from '@/widgets'
       <Navbar></Navbar>
       <HeroSection></HeroSection>
     </div>
+
+    <PopularDestinations></PopularDestinations>
   </main>
 </template>

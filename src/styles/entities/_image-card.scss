@@ -1,0 +1,78 @@
+@use '../variables' as variables;
+@use '../mixins' as mixins;
+@use '../media' as media;
+
+.image-card {
+  position: relative;
+  width: 497px;
+  min-width: 497px;
+  height: 661px;
+  border-radius: 26px;
+
+  background-color: variables.$color-image-overlay-orange;
+
+  @include media.tablet {
+    width: 100%;
+    min-width: auto;
+    height: 456px;
+
+    //show only first card on tablet width
+    &:not(:first-child) {
+      display: none !important;
+    }
+  }
+
+  @include media.mobile {
+    height: 320px;
+  }
+
+  &__text {
+    position: absolute;
+  }
+
+  & img {
+    @include mixins.bordered-image();
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+    position: relative;
+    left: 24px;
+    bottom: 100px;
+
+    &__place {
+      font-family: variables.$font-primary;
+      font-size: 28px;
+      color: white;
+
+      @include media.mobile {
+        font-size: 24px;
+      }
+    }
+
+    &__location {
+      display: flex;
+      flex-direction: row;
+      justify-content: start;
+      align-items: center;
+      gap: 16px;
+
+      &__name {
+        font-family: variables.$font-secondary;
+        font-size: 24px;
+        color: white;
+
+        @include media.mobile {
+          font-size: 18px;
+        }
+      }
+
+      &__icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

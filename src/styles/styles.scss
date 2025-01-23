@@ -7,19 +7,24 @@
 @use 'utils';
 @use 'globals';
 
-// PAGES
-@use './pages/home';
+// SHARED
+@use './shared/button-default';
+@use './shared/accent-line';
+@use './shared/arrow-buttons';
 
-// WIDGETS
-@use './widgets/navbar';
-@use './widgets/hero';
+// ENTITIES
+@use './entities/navbar-link';
+@use './entities/image-card';
 
 // FEATURES
 @use './features/navbar-links';
 @use './features/booking-card';
+@use './features/destination-cards';
 
-// ENTITIES
-@use './entities/navbar-link';
+// WIDGETS
+@use './widgets/navbar';
+@use './widgets/hero';
+@use './widgets/popular-destinations';
 
-// SHARED
-@use './shared/button-default';
+// PAGES
+@use './pages/home';
