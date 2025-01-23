@@ -1,5 +1,5 @@
 <script setup>
-import { BookingCard } from '@/features';
+import { BookingCard } from '@/features'
 </script>
 
 <template>

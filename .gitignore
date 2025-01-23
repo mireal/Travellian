@@ -30,5 +30,5 @@ coverage
 *.tsbuildinfo
 
 # Builded styles
-.src/styles/*.css
-.src/styles/*.css.map
+/src/**/*.css
+/src/**/*.css.map

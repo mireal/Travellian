@@ -1,6 +1,6 @@
 <script setup>
 defineProps({
-  parentClass: {
+  accentLineClass: {
     type: String,
     required: true,
   },
@@ -16,12 +16,12 @@ defineProps({
 </script>
 
 <template>
-  <div :class="`${parentClass}__header`">
-    <h2 :class="`${parentClass}__header__title`">
+  <div>
+    <h2>
       {{ title }}
     </h2>
-    <div :class="`${parentClass}__header__accent-line`" class="accent-line"></div>
-    <h3 :class="`${parentClass}__header__subtitle`">
+    <div :class="accentLineClass" class="accent-line"></div>
+    <h3>
       {{ text }}
     </h3>
   </div>
