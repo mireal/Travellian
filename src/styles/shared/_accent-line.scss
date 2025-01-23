@@ -1,9 +1,9 @@
 @use '../variables' as variables;
 
 .accent-line {
-    margin: 20px 0 32px 0;
-    padding: 0;
-    height: 3px;
-  
-    background-color: variables.$color-primary;
-  }
+  margin: 20px 0 32px 0;
+  padding: 0;
+  height: 3px;
+
+  background-color: variables.$color-primary;
+}
