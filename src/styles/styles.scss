@@ -9,22 +9,25 @@
 
 // SHARED
 @use './shared/button-default';
-@use './shared/accent-line';
+@use './shared/section-title';
 @use './shared/arrow-buttons';
 
 // ENTITIES
 @use './entities/navbar-link';
 @use './entities/image-card';
+@use './entities/offer-card';
 
 // FEATURES
 @use './features/navbar-links';
 @use './features/booking-card';
 @use './features/destination-cards';
+@use './features/offer-cards';
 
 // WIDGETS
 @use './widgets/navbar';
 @use './widgets/hero';
 @use './widgets/popular-destinations';
+@use './widgets/special-offer';
 
 // PAGES
 @use './pages/home';

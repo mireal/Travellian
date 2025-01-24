@@ -2,16 +2,16 @@
 defineProps({
   place: {
     type: String,
-    required: true
+    required: true,
   },
   location: {
     type: String,
-    required: true
+    required: true,
   },
   imageSrc: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 </script>
 
@@ -20,7 +20,7 @@ defineProps({
     <img :src="imageSrc" alt="" />
 
     <div class="image-card__info">
-      <div class="image-card__info__place"> {{ place }}</div>
+      <div class="image-card__info__place">{{ place }}</div>
 
       <div class="image-card__info__location">
         <span class="image-card__info__location__icon icon icon__location"></span>

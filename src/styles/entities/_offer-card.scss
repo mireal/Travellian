@@ -1,0 +1,105 @@
+@use '../media' as media;
+@use '../variables' as variables;
+@use '../mixins' as mixins;
+
+.offer-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include media.tablet {
+    &:not(:first-child) {
+      display: none !important;
+    }
+  }
+
+  &__image-container {
+    width: 100%;
+    height: 286px;
+
+    border-radius: variables.$border-radius-big variables.$border-radius-big 0 0;
+    background-color: variables.$color-image-overlay-orange;
+
+    & img {
+      @include mixins.bordered-image();
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 24px;
+
+    background-color: variables.$color-offer-card;
+
+    padding: 40px 24px;
+    border-radius: 0 0 variables.$border-radius-big variables.$border-radius-big;
+    &__section {
+      &--vertical {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: start;
+      }
+
+      &--horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &__title {
+      color: variables.$color-grey;
+      font-family: variables.$font-mulish;
+      font-size: 28px;
+      font-weight: normal;
+    }
+
+    &__stars {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 4px;
+
+      &__star-icon {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    &__description {
+      font-family: variables.$font-secondary;
+      font-size: 18px;
+
+      color: black;
+
+      @include media.mobile {
+        font-size: 16px;
+      }
+    }
+
+    &__price-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      font-family: variables.$font-secondary;
+
+      &__text {
+        font-size: 20px;
+        color: variables.$color-grey;
+      }
+
+      &__price {
+        font-size: 40px;
+        color: variables.$color-primary;
+      }
+    }
+  }
+}

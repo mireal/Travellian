@@ -1,14 +1,15 @@
 <script setup>
-import { HeroSection, Navbar, PopularDestinations } from '@/widgets'
+import { HeroSection, Navbar, PopularDestinations, SpecialOffer } from '@/widgets'
 </script>
 
 <template>
   <main>
     <div class="bg-image">
-      <Navbar></Navbar>
-      <HeroSection></HeroSection>
+      <Navbar />
+      <HeroSection />
     </div>
 
-    <PopularDestinations></PopularDestinations>
+    <PopularDestinations />
+    <SpecialOffer />
   </main>
 </template>

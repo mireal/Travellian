@@ -1,14 +1,15 @@
 @use '../media' as media;
 
-.popular-destinations {
+.special-offer {
   display: grid;
 
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr;
   grid-template-rows: auto auto;
   grid-row-gap: 100px;
+  align-items: end;
 
   grid-template-areas:
-    'title buttons'
+    'buttons title'
     'cards cards';
 
   @include media.tablet {
@@ -19,21 +20,26 @@
       'cards'
       'buttons';
   }
-  &__header {
+
+  &__title {
     grid-area: title;
+    align-items: end;
+
+    @include media.tablet {
+      align-items: start;
+    }
 
     &__accent-line {
       width: 360px;
 
-      @include media.mobile {
-        width: 78vw;
+      @include media.tablet {
+        width: 34vw;
       }
     }
   }
 
   &__buttons {
     grid-area: buttons;
-    align-self: end;
 
     @include media.tablet {
       justify-self: center;
