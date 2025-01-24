@@ -39,11 +39,26 @@ const cardsPlaceholder = ref([
 
 <template>
   <section class="special-offer">
-    <ArrowButtons class="special-offer__buttons" :click-left="() => { swapCards.left(cardsPlaceholder) }"
-      :click-right="() => { swapCards.right(cardsPlaceholder) }" />
+    <ArrowButtons
+      class="special-offer__buttons"
+      :click-left="
+        () => {
+          swapCards.left(cardsPlaceholder)
+        }
+      "
+      :click-right="
+        () => {
+          swapCards.right(cardsPlaceholder)
+        }
+      "
+    />
 
-    <SectionTitle class="special-offer__title" title="Special Offer" text="Check out our special offer and discounts"
-      accent-line-class="special-offer__title__accent-line" />
+    <SectionTitle
+      class="special-offer__title"
+      title="Special Offer"
+      text="Check out our special offer and discounts"
+      accent-line-class="special-offer__title__accent-line"
+    />
 
     <OfferCards class="special-offer__cards" :cards="cardsPlaceholder" />
   </section>

@@ -25,22 +25,30 @@ const galleryPlaceholder = ref([
     src: './src/assets/images/destinations/orange-tiles.jpg',
   },
 ])
-
 </script>
 
 <template>
   <section class="popular-destinations">
-    <SectionTitle class="popular-destinations__header" accent-line-class="popular-destinations__header__accent-line"
+    <SectionTitle
+      class="popular-destinations__header"
+      accent-line-class="popular-destinations__header__accent-line"
       title="Popular Destinations"
-      text="Most popular destinations around the world, from historical places to natural wonders." />
+      text="Most popular destinations around the world, from historical places to natural wonders."
+    />
 
-    <ArrowButtons class="popular-destinations__buttons" :click-left="() => {
-        swapCards.left(cards)
-      }
-      " :click-right="() => {
-          swapCards.right(cards)
+    <ArrowButtons
+      class="popular-destinations__buttons"
+      :click-left="
+        () => {
+          swapCards.left(galleryPlaceholder)
         }
-        " />
+      "
+      :click-right="
+        () => {
+          swapCards.right(galleryPlaceholder)
+        }
+      "
+    />
 
     <DestinationCards :cards="galleryPlaceholder" class="popular-destinations__cards" />
   </section>

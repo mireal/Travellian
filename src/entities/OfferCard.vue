@@ -42,7 +42,11 @@ defineProps({
         </div>
 
         <div class="offer-card__info__stars">
-          <div class="offer-card__info__stars__star-icon icon icon__star" v-for="i in rating" v-bind:key="i" />
+          <div
+            class="offer-card__info__stars__star-icon icon icon__star"
+            v-for="i in rating"
+            v-bind:key="i"
+          />
         </div>
       </div>
 

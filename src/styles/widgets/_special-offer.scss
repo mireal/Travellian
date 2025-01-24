@@ -35,6 +35,10 @@
       @include media.tablet {
         width: 34vw;
       }
+
+      @include media.mobile {
+        width: 61vw;
+      }
     }
   }
 
