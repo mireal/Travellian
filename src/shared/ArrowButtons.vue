@@ -18,12 +18,11 @@ defineProps({
 <template>
   <div class="arrow-buttons">
     <div class="arrow-buttons__button">
-      <img @click="clickLeft" src="../assets/icons/button-left.svg" alt="">
+      <img @click="clickLeft" src="../assets/icons/button-left.svg" alt="" />
     </div>
 
     <div class="arrow-buttons__button">
-      <img @click="clickRight" src="../assets/icons/button-right.svg" alt="">
+      <img @click="clickRight" src="../assets/icons/button-right.svg" alt="" />
     </div>
-
   </div>
 </template>

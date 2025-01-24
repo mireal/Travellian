@@ -16,12 +16,12 @@ defineProps({
 </script>
 
 <template>
-  <div>
+  <div class="section-title">
     <h2>
       {{ title }}
     </h2>
-    <div :class="accentLineClass" class="accent-line"></div>
-    <h3>
+    <div :class="accentLineClass" class="section-title__accent-line"></div>
+    <h3 class="section-title__subtitle">
       {{ text }}
     </h3>
   </div>

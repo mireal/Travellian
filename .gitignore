@@ -32,3 +32,5 @@ coverage
 # Builded styles
 /src/**/*.css
 /src/**/*.css.map
+src/styles/styles.css
+src/styles/styles.css.map
