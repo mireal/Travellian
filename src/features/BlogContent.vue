@@ -1,11 +1,11 @@
 <script setup>
-import { LinkArrow } from '@/shared';
+import { LinkArrow } from '@/shared'
 
 defineProps({
   content: {
     type: Object,
-    required: true
-  }
+    required: true,
+  },
 })
 </script>
 
@@ -25,7 +25,6 @@ defineProps({
       </div>
 
       <LinkArrow text="Read More" link="#" />
-
     </div>
   </div>
 </template>

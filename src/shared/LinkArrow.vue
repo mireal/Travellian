@@ -2,12 +2,12 @@
 defineProps({
   text: {
     type: String,
-    required: true
+    required: true,
   },
   link: {
     type: String,
-    required: true
-  }
+    required: true,
+  },
 })
 </script>
 
