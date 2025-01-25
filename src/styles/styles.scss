@@ -11,6 +11,7 @@
 @use './shared/button-default';
 @use './shared/section-title';
 @use './shared/arrow-buttons';
+@use './shared/link-arrow';
 
 // ENTITIES
 @use './entities/navbar-link';
@@ -22,12 +23,14 @@
 @use './features/booking-card';
 @use './features/destination-cards';
 @use './features/offer-cards';
+@use './features/blog-content';
 
 // WIDGETS
 @use './widgets/navbar';
 @use './widgets/hero';
 @use './widgets/popular-destinations';
 @use './widgets/special-offer';
+@use './widgets/our-blog';
 
 // PAGES
 @use './pages/home';

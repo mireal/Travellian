@@ -1,5 +1,5 @@
 <script setup>
-import { HeroSection, Navbar, PopularDestinations, SpecialOffer } from '@/widgets'
+import { HeroSection, Navbar, PopularDestinations, SpecialOffer, OurBlog } from '@/widgets'
 </script>
 
 <template>
@@ -11,5 +11,6 @@ import { HeroSection, Navbar, PopularDestinations, SpecialOffer } from '@/widget
 
     <PopularDestinations />
     <SpecialOffer />
+    <OurBlog />
   </main>
 </template>
