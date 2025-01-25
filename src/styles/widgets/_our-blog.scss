@@ -1,0 +1,11 @@
+@use '../media' as media;
+
+.our-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+  &__accent-line {
+    width: 150px;
+  }
+}

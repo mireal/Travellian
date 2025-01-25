@@ -1,0 +1,18 @@
+@use '../variables' as variables;
+
+.link-arrow {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+
+  color: variables.$color-primary;
+  font-family: variables.$font-secondary;
+  font-size: 24px;
+
+  &__icon {
+    width: 27px;
+    height: 27px;
+  }
+}
