@@ -1,0 +1,36 @@
+@use '../variables' as variables;
+@use '../media' as media;
+@use '../mixins' as mixins;
+
+.gallery-image__container {
+  border-radius: variables.$border-radius-big;
+  padding: 20px 0;
+
+  & img {
+    @include mixins.bordered-image;
+  }
+
+  @keyframes on-hover {
+    100% {
+      padding-bottom: 40px;
+      padding-top: 0px;
+    }
+  }
+
+  @include media.tablet-above {
+    &:hover {
+      animation-name: on-hover;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+    }
+
+    // &:not(:hover) {
+    //   animation-direction: reverse;
+    //   animation-name: on-hover;
+    //   animation-duration: 1s;
+    //   animation-fill-mode: forwards;
+    //   animation-timing-function: ease;
+    // }
+  }
+}

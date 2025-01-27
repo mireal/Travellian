@@ -19,6 +19,7 @@
 @use './entities/offer-card';
 @use './entities/decorated-button';
 @use './entities/trip-card';
+@use './entities/destination-gallery-image';
 
 // FEATURES
 @use './features/navbar-links';
@@ -27,6 +28,7 @@
 @use './features/offer-cards';
 @use './features/blog-content';
 @use './features/trip-planner-cards';
+@use './features/destination-image-gallery';
 
 // WIDGETS
 @use './widgets/navbar';
@@ -35,6 +37,7 @@
 @use './widgets/special-offer';
 @use './widgets/our-blog';
 @use './widgets/trip-planners';
+@use './widgets/destination-gallery';
 
 // PAGES
 @use './pages/home';

@@ -6,6 +6,7 @@ import {
   SpecialOffer,
   OurBlog,
   TripPlanners,
+  DestinationGallery,
 } from '@/widgets'
 </script>
 
@@ -20,5 +21,6 @@ import {
     <SpecialOffer />
     <OurBlog />
     <TripPlanners />
+    <DestinationGallery />
   </main>
 </template>
