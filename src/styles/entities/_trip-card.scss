@@ -1,0 +1,97 @@
+@use '../media' as media;
+@use '../mixins' as mixins;
+@use '../variables' as variables;
+
+.trip-card {
+  color: variables.$color-dark-blue;
+  width: 300px;
+
+  @include media.desktop-small {
+    width: 250px;
+  }
+
+  @include media.tablet {
+    width: 100%;
+  }
+
+  @include media.tablet-above {
+    &:hover .trip-card__info {
+      display: flex;
+    }
+  }
+
+  &__info {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+
+    padding: 20px 1px;
+
+    @include media.tablet {
+      display: flex;
+    }
+  }
+
+  &__image-box {
+    border-radius: variables.$border-radius-big;
+    height: 400px;
+
+    @include media.desktop-small {
+      height: 350px;
+    }
+
+    @include media.mobile {
+      height: 320px;
+    }
+
+    & img {
+      @include mixins.bordered-image;
+    }
+  }
+
+  &__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &__type,
+  &__price,
+  &__days {
+    font-family: variables.$font-secondary;
+    font-size: 18px;
+
+    @include media.tablet {
+      font-size: 24px;
+    }
+
+    @include media.mobile {
+      font-size: 18px;
+    }
+  }
+
+  &__name {
+    font-family: variables.$font-primary;
+    font-size: 28px;
+    font-weight: 700;
+
+    @include media.tablet {
+      font-size: 32px;
+    }
+
+    @include media.mobile {
+      font-size: 28px;
+    }
+  }
+
+  &__stars {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 4px;
+
+    &__star-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

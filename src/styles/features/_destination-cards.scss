@@ -1,0 +1,10 @@
+.destination-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 32px;
+
+  width: 100%;
+}

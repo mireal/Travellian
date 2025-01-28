@@ -1,0 +1,35 @@
+@use '../media' as media;
+@use '../variables' as variables;
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 234px;
+    height: 46px;
+
+    @include media.mobile {
+      width: 140px;
+      height: 28px;
+    }
+  }
+
+  &__links {
+  }
+
+  &__auth {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 36px;
+
+    &__login {
+      font-family: variables.$font-secondary;
+      font-size: 20px;
+      color: white;
+    }
+  }
+}

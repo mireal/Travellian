@@ -1,0 +1,40 @@
+@use '../variables' as variables;
+
+.decorated-button {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  margin: 15px -28px;
+
+  &__button {
+    padding: 20px;
+    z-index: 2;
+  }
+
+  &__square {
+    width: 43px;
+    height: 43px;
+
+    position: relative;
+    display: inline-block;
+
+    &--left {
+      background-color: variables.$color-dark-blue;
+      align-self: flex-start;
+
+      top: -15px;
+      left: 28px;
+    }
+
+    &--right {
+      background-color: variables.$color-grey;
+      align-self: flex-end;
+
+      bottom: -15px;
+      right: 28px;
+    }
+  }
+}

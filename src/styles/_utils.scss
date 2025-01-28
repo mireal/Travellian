@@ -1,0 +1,39 @@
+@use 'media' as media;
+@use 'variables' as variables;
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.hidden-tablet {
+  @include media.tablet {
+    display: none !important;
+  }
+}
+
+.hidden-mobile {
+  @include media.mobile {
+    display: none !important;
+  }
+}
+
+.visible-tablet-above {
+  @include media.tablet-above {
+    display: none !important;
+  }
+}
+
+.bg-image {
+  background-image: url('../assets/images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}

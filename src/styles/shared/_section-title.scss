@@ -1,0 +1,18 @@
+@use '../variables' as variables;
+
+.section-title {
+  display: flex;
+  flex-direction: column;
+
+  &__subtitle {
+    color: variables.$color-grey;
+  }
+
+  &__accent-line {
+    margin: 20px 0 32px 0;
+    padding: 0;
+    height: 3px;
+
+    background-color: variables.$color-primary;
+  }
+}

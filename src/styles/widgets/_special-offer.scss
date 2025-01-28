@@ -1,0 +1,56 @@
+@use '../media' as media;
+
+.special-offer {
+  display: grid;
+
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto;
+  grid-row-gap: 100px;
+  align-items: end;
+
+  grid-template-areas:
+    'buttons title'
+    'cards cards';
+
+  @include media.tablet {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas:
+      'title'
+      'cards'
+      'buttons';
+  }
+
+  &__title {
+    grid-area: title;
+    align-items: end;
+
+    @include media.tablet {
+      align-items: start;
+    }
+
+    &__accent-line {
+      width: 360px;
+
+      @include media.tablet {
+        width: 34vw;
+      }
+
+      @include media.mobile {
+        width: 61vw;
+      }
+    }
+  }
+
+  &__buttons {
+    grid-area: buttons;
+
+    @include media.tablet {
+      justify-self: center;
+    }
+  }
+
+  &__cards {
+    grid-area: cards;
+  }
+}

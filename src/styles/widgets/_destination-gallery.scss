@@ -1,0 +1,47 @@
+@use '../media' as media;
+
+.destination-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-template-areas:
+    'title buttons'
+    'gallery gallery';
+
+  row-gap: 100px;
+
+  @include media.tablet {
+    grid-template-columns: 1fr;
+
+    grid-template-areas:
+      'title'
+      'gallery'
+      'buttons';
+  }
+
+  &__title {
+    grid-area: title;
+  }
+
+  &__buttons {
+    align-self: end;
+    justify-self: end;
+    grid-area: buttons;
+
+    @include media.tablet {
+      justify-self: center;
+    }
+  }
+
+  &__gallery {
+    grid-area: gallery;
+  }
+
+  &__accent-line {
+    width: 283px;
+
+    @include media.mobile {
+      width: 90%;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@use '../variables' as variables;
+
+.button-default {
+  color: white;
+  background-color: variables.$color-primary;
+
+  border: none;
+  border-radius: variables.$border-radius-button;
+
+  padding: 20px 32px;
+
+  font-family: variables.$font-secondary;
+  font-size: 20px;
+}
