@@ -7,6 +7,7 @@ import {
   OurBlog,
   TripPlanners,
   DestinationGallery,
+  FooterSection
 } from '@/widgets'
 </script>
 
@@ -22,5 +23,6 @@ import {
     <OurBlog />
     <TripPlanners />
     <DestinationGallery />
+    <FooterSection />
   </main>
 </template>
