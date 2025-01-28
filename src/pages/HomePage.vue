@@ -7,7 +7,7 @@ import {
   OurBlog,
   TripPlanners,
   DestinationGallery,
-  FooterSection
+  FooterSection,
 } from '@/widgets'
 </script>
 
