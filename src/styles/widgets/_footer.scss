@@ -1,0 +1,66 @@
+@use '../variables' as variables;
+@use '../media' as media;
+
+.footer-bg {
+  background-color: variables.$color-dark-blue;
+}
+
+.footer {
+  color: white;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include media.tablet {
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 60px;
+  }
+
+  &__section {
+    font-family: variables.$font-secondary;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    &__title {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    &__items {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+
+      font-size: 18px;
+
+      &__link a:active,
+      &__link a:visited {
+        color: white;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+
+    &__logo {
+      width: 234px;
+      height: 46px;
+    }
+
+    &__icons {
+      display: flex;
+      flex-direction: row;
+      gap: 24px;
+
+      &__icon {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+}
