@@ -15,7 +15,7 @@ import { DefaultButton } from '@/shared'
     </div>
 
     <a class="navbar__burger visible-tablet-above" href="#">
-      <img class="navbar__burger--icon" src="../assets/icons/burger.svg" alt="burger" />
+      <img class="navbar__burger--icon" src="/icons/burger.svg" alt="burger" />
     </a>
   </nav>
 </template>

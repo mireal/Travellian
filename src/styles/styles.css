@@ -312,21 +312,21 @@ template {
 
 @font-face {
   font-family: "Playfair Display";
-  src: url("../assets/fonts/PlayfairDisplay-Regular.woff2") format("woff2");
+  src: url("/fonts/PlayfairDisplay-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Rubik";
-  src: url("../assets/fonts/Rubik-Light.woff2") format("woff2");
+  src: url("/fonts/Rubik-Light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 @font-face {
   font-family: "Mulish";
-  src: url("../assets/fonts/Mulish-ExtraLight.woff2") format("woff2");
+  src: url("/fonts/Mulish-ExtraLight.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -339,37 +339,37 @@ template {
   background-size: contain;
 }
 .icon__location {
-  background-image: url("../assets/icons/location.svg");
+  background-image: url("/icons/location.svg");
 }
 .icon__star {
-  background-image: url("../assets/icons/star.svg");
+  background-image: url("/icons/star.svg");
 }
 .icon__button-left {
-  background-image: url("../assets/icons/button-left.svg");
+  background-image: url("/icons/button-left.svg");
 }
 .icon__button-right {
-  background-image: url("../assets/icons/button-right.svg");
+  background-image: url("/icons/button-right.svg");
 }
 .icon__arrow-right {
-  background-image: url("../assets/icons/arrow-right.svg");
+  background-image: url("/icons/arrow-right.svg");
 }
 .icon__arrow-right--orange {
-  background-image: url("../assets/icons/arrow-right-orange.svg");
+  background-image: url("/icons/arrow-right-orange.svg");
 }
 .icon__logo {
-  background-image: url(../assets/images/logo.svg);
+  background-image: url(/images/logo.svg);
 }
 .icon__twitter {
-  background-image: url("../assets/icons/twitter.svg");
+  background-image: url("/icons/twitter.svg");
 }
 .icon__facebook {
-  background-image: url("../assets/icons/facebook.svg");
+  background-image: url("/icons/facebook.svg");
 }
 .icon__instagram {
-  background-image: url("../assets/icons/instagram.svg");
+  background-image: url("/icons/instagram.svg");
 }
 .icon__pinterest {
-  background-image: url("../assets/icons/pinterest.svg");
+  background-image: url("/icons/pinterest.svg");
 }
 
 .visually-hidden {
@@ -405,7 +405,7 @@ template {
 }
 
 .bg-image {
-  background-image: url("../assets/images/background.png");
+  background-image: url("/images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -531,6 +531,12 @@ input::-moz-placeholder, select::-moz-placeholder {
 input::placeholder,
 select::placeholder {
   color: inherit;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 .button-default {

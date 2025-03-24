@@ -12,7 +12,7 @@ const cardsPlaceholder = ref([
     rating: 5,
     price: 500,
     link: '#',
-    imageSrc: './src/assets/images/special-offer/lisbon.jpg',
+    imageSrc: '/images/special-offer/lisbon.jpg',
   },
   {
     title: 'Athens, Greece',
@@ -22,7 +22,7 @@ const cardsPlaceholder = ref([
     rating: 5,
     price: 800,
     link: '#',
-    imageSrc: './src/assets/images/special-offer/athens.png',
+    imageSrc: '/images/special-offer/athens.png',
   },
   {
     title: 'Rome, Italy',
@@ -32,7 +32,7 @@ const cardsPlaceholder = ref([
     rating: 5,
     price: 750,
     link: '#',
-    imageSrc: './src/assets/images/special-offer/rome.jpg',
+    imageSrc: '/images/special-offer/rome.jpg',
   },
 ])
 </script>

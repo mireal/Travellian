@@ -4,10 +4,10 @@ import { SectionTitle, ArrowButtons, swapCards } from '@/shared'
 import { DestinationImageGallery } from '@/features'
 
 const imageSourcesPlaceholder = ref([
-  './src/assets/images/gallery/1.jpg',
-  './src/assets/images/gallery/2.jpeg',
-  './src/assets/images/gallery/3.png',
-  './src/assets/images/gallery/4.jpeg',
+  '/images/gallery/1.jpg',
+  '/images/gallery/2.jpeg',
+  '/images/gallery/3.png',
+  '/images/gallery/4.jpeg',
 ])
 </script>
 
