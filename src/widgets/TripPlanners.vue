@@ -10,7 +10,7 @@ const cardsPlaceholder = [
     type: 'GUIDED TOUR',
     days: 7,
     rating: 5,
-    imageSrc: './src/assets/images/trip-planners/coliseum.jpg',
+    imageSrc: '/images/trip-planners/coliseum.jpg',
   },
   {
     name: 'Paris City Tour',
@@ -18,7 +18,7 @@ const cardsPlaceholder = [
     type: 'GUIDED TOUR',
     days: 7,
     rating: 5,
-    imageSrc: './src/assets/images/trip-planners/eiffel-tower.jpg',
+    imageSrc: '/images/trip-planners/eiffel-tower.jpg',
   },
   {
     name: 'Barcelona City Tour',
@@ -26,7 +26,7 @@ const cardsPlaceholder = [
     type: 'GUIDED TOUR',
     days: 7,
     rating: 5,
-    imageSrc: './src/assets/images/trip-planners/madrid.png',
+    imageSrc: '/images/trip-planners/madrid.png',
   },
   {
     name: 'Budapest City Tour',
@@ -34,7 +34,7 @@ const cardsPlaceholder = [
     type: 'GUIDED TOUR',
     days: 7,
     rating: 5,
-    imageSrc: './src/assets/images/trip-planners/fishermans-bastion.jpg',
+    imageSrc: '/images/trip-planners/fishermans-bastion.jpg',
   },
 ]
 </script>

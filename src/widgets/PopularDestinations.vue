@@ -7,22 +7,22 @@ const galleryPlaceholder = ref([
   {
     place: 'Monument of Berlin',
     location: 'Berlin, Germany',
-    src: './src/assets/images/destinations/monument-of-berlin.jpg',
+    src: '/images/destinations/monument-of-berlin.jpg',
   },
   {
     place: 'Millennium Bridge',
     location: 'London, United Kingdom',
-    src: './src/assets/images/destinations/millenium-bridge.jpg',
+    src: '/images/destinations/millenium-bridge.jpg',
   },
   {
     place: 'Rialto Bridge',
     location: 'Venice, Italy',
-    src: './src/assets/images/destinations/rialto-bridge.jpg',
+    src: '/images/destinations/rialto-bridge.jpg',
   },
   {
     place: 'Sea of Orange Tiles',
     location: 'Lisbon, Portugal',
-    src: './src/assets/images/destinations/orange-tiles.jpg',
+    src: '/images/destinations/orange-tiles.jpg',
   },
 ])
 </script>

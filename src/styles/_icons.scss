@@ -6,47 +6,48 @@
   background-size: contain;
 
   &__location {
-    background-image: url('../assets/icons/location.svg');
+    background-image: url('/icons/location.svg');
   }
 
   &__star {
-    background-image: url('../assets/icons/star.svg');
+    background-image: url('/icons/star.svg');
   }
 
   &__button-left {
     // width: 66px;
     // height: 60px;
-    background-image: url('../assets/icons/button-left.svg');
+    background-image: url('/icons/button-left.svg');
   }
 
   &__button-right {
-    background-image: url('../assets/icons/button-right.svg');
+    background-image: url('/icons/button-right.svg');
   }
 
   &__arrow-right {
-    background-image: url('../assets/icons/arrow-right.svg');
+    background-image: url('/icons/arrow-right.svg');
+
     &--orange {
-      background-image: url('../assets/icons/arrow-right-orange.svg');
+      background-image: url('/icons/arrow-right-orange.svg');
     }
   }
 
   &__logo {
-    background-image: url(../assets/images/logo.svg);
+    background-image: url(/images/logo.svg);
   }
 
   &__twitter {
-    background-image: url('../assets/icons/twitter.svg');
+    background-image: url('/icons/twitter.svg');
   }
 
   &__facebook {
-    background-image: url('../assets/icons/facebook.svg');
+    background-image: url('/icons/facebook.svg');
   }
 
   &__instagram {
-    background-image: url('../assets/icons/instagram.svg');
+    background-image: url('/icons/instagram.svg');
   }
 
   &__pinterest {
-    background-image: url('../assets/icons/pinterest.svg');
+    background-image: url('/icons/pinterest.svg');
   }
 }
